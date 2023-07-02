@@ -15,21 +15,27 @@ export function setupMenu() {
     action: function () {
       menu.openBtn.addEventListener('click', menu.toggler);
       menu.overlay.addEventListener("click", menu.toggler);
-      menu.activeLink();
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && menu.overlay.classList.contains("_show")) {
+          menu.toggler();
+          // console.log('Esc')
+        }
+      })
+      // menu.activeLink();
     },
-    removeActiveLink: function () {
-      menu.navBtns.forEach(btn => btn.classList.remove("_active"));
-    },
-    activeLink: function () {
-      menu.navBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          menu.removeActiveLink();
-          if(!btn.classList.contains("_active")) {
-            btn.classList.add("_active");
-          }
-        })
-      });
-    }
+    // removeActiveLink: function () {
+    //   menu.navBtns.forEach(btn => btn.classList.remove("_active"));
+    // },
+    // activeLink: function () {
+    //   menu.navBtns.forEach((btn) => {
+    //     btn.addEventListener("click", () => {
+    //       menu.removeActiveLink();
+    //       if(!btn.classList.contains("_active")) {
+    //         btn.classList.add("_active");
+    //       }
+    //     })
+    //   });
+    // }
   };
   menu.action();
 }

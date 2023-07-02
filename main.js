@@ -1,11 +1,11 @@
-import { setupRouter } from "@/utils/Router/router";
+// import { setupRouter } from "@/utils/Router/router";
+// import { setupResize } from "@utils/Resize/resize.js";
 import { setupMenu } from "@utils/Menu/menu";
-import { setupResize } from "@utils/Resize/resize.js";
 import { setupTheme } from "@utils/Theme/theme.js";
 
-setupRouter();
+// setupRouter();
+// setupResize();
 setupMenu();
-setupResize();
 setupTheme();
 
 // Определение текущего пути и редирект на главную
@@ -19,6 +19,10 @@ function defineCurrentPage() {
     if (pathList.length > 1) window.window.location = '/index.html';
   })
 }
+
+// document.addEventListener('keydown', (event) => {
+//   if(event.key === 'Escape') console.log('Esc');
+// })
 
 defineCurrentPage();
 

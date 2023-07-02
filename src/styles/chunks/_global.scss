@@ -42,18 +42,33 @@ body._lock {
   overflow-x: hidden;
 }
 
+.base-layout {
+  margin-top: 60px;
+  padding: 50px 0;
+  background-color: var(--light2);
+  color: var(--dark);
+}
+
+.title-slogan {
+  margin-bottom: 30px;
+
+  span {
+    color: red;
+  }
+}
+
 .container {
   padding: 0 20px;
   max-width: 1280px;
   margin: 0 auto;
 
-  &-fluid {
-    width: 100vw;
-  }
-
   @media(max-width: 620px) {
     padding: 0 15px;
   }
+}
+
+.container-fluid {
+  width: 100vw;
 }
 
 .container--inner {
@@ -61,6 +76,7 @@ body._lock {
   display: flex;
   flex-direction: column;
 }
+
 
 ::-webkit-scrollbar {
   width: 4px;
