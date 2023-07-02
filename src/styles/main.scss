@@ -1,0 +1,22 @@
+/* __________ Utils __________ */
+@import "@utils/Theme/_theme.scss";
+@import "@utils/Router/_router.scss";
+/* __________ /Utils __________ */
+
+
+/* __________ Components __________ */
+@import "@styles/chunks/_global";
+@import "@styles/chunks/_vars";
+@import "@styles/chunks/fonts";
+/* __________ /Components __________ */
+
+
+/*__________ Layouts __________*/
+@import "@layouts/Header/_Header.scss";
+@import "@layouts/Footer/_Footer.scss";
+/*__________ /Layouts __________*/
+
+
+/*__________ Modules __________*/
+// @import "@modules/pages/Home/_home.scss";
+/*__________ /Modules __________*/
