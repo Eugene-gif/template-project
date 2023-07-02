@@ -1,7 +1,7 @@
-import { setupRouter } from "@modules/functional/Router/router";
-import { setupMenu } from "@modules/functional/Menu/menu";
-import { setupResize } from "@modules/functional/Resize/resize";
-import { setupTheme } from "@modules/functional/Theme/theme";
+import { setupRouter } from "@/utils/Router/router";
+import { setupMenu } from "@utils/Menu/menu";
+import { setupResize } from "@utils/Resize/resize.js";
+import { setupTheme } from "@utils/Theme/theme.js";
 
 setupRouter();
 setupMenu();

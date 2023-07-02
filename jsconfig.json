@@ -1,22 +1,37 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"@data/*": [
-				"src/data/*"
-			],
-			"@modules/*": [
-				"src/modules/*"
-			],
-			"@scss/*": [
-				"src/scss/*"
-			],
-			"@/*": [
-				"src/*"
-			],
-			"@img/*": [
-				"src/img/*"
-			]
-		}
-	}
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@data/*": [
+        "src/data/*"
+      ],
+      "@modules/*": [
+        "src/modules/*"
+      ],
+      "@scss/*": [
+        "src/scss/*"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+      "@img/*": [
+        "src/img/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@Menu/*": [
+        "src/utils/Menu/*"
+      ],
+      "@Resize/*": [
+        "src/utils/Resize/*"
+      ],
+      "@Theme/*": [
+        "src/utils/Theme/*"
+      ],
+      "@Router/*": [
+        "src/utils/Router/*"
+      ]
+    }
+  }
 }
