@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import { ViteAliases } from 'vite-aliases'
 import injectHTML from 'vite-plugin-html-inject';
 
 export default defineConfig({
@@ -8,7 +7,7 @@ export default defineConfig({
     open: true,
     host: true,
   },
-  plugins: [injectHTML(), ViteAliases()],
+  plugins: [injectHTML()],
   build: {
     rollupOptions: {
       input: {
