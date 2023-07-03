@@ -1,7 +1,7 @@
 // import { setupRouter } from "@/utils/Router/router";
 // import { setupResize } from "@utils/Resize/resize.js";
-import { setupMenu } from "@utils/Menu/menu";
-import { setupTheme } from "@utils/Theme/theme.js";
+import { setupMenu } from "./src/utils/Menu/menu";
+import { setupTheme } from "./src/utils/Theme/theme.js";
 
 // setupRouter();
 // setupResize();
