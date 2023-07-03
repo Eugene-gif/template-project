@@ -7,6 +7,9 @@ export default defineConfig({
     open: true,
     host: true,
   },
+  resolve: {
+    alias: { '@': resolve(__dirname, './src') }
+  },
   plugins: [injectHTML()],
   build: {
     rollupOptions: {

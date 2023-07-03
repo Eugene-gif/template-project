@@ -1,6 +1,6 @@
 /* __________ Utils __________ */
-@import "../utils/Theme/_theme.scss";
-@import "../utils/Router/_router.scss";
+@import "@/utils/Theme/_theme.scss";
+@import "@/utils/Router/_router.scss";
 /* __________ /Utils __________ */
 
 
@@ -12,8 +12,8 @@
 
 
 /*__________ Layouts __________*/
-@import "../layouts/Header/_Header.scss";
-@import "../layouts/Footer/_Footer.scss";
+@import "@/layouts/Header/_Header.scss";
+@import "@/layouts/Footer/_Footer.scss";
 /*__________ /Layouts __________*/
 
 
